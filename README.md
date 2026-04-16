@@ -1,13 +1,14 @@
-# UCSF RMaC: UCSF Renal Mass CT Dataset
+# UCSF-ProstateMR: The University of California - San Francisco (UCSF) Prostate MRI (UCSF-ProstateMR) Dataset
 
 ![Logo](logo.png)
 
-This dataset provides a set of 831 3D Multiphase CT exams of renal masses from UCSF. Each exam includes an annotation of renal mass in the form of bounding boxes or polygon masks, and the pathology results from each renal mass that were obtained after surgery that serve as the ground-truth outcome.  The purpose of this dataset is to support development of new algorithms to better distinguish aggressive from indolent disease based on non-invasive imaging.
+This dataset provides a large dataset of 973 prostate MRI exams performed between January 2016 to March 2019 of all patients that underwent subsequent MRI/ultrasound fusion biopsy within one year at UCSF. Each exam includes registered T2, ADC and high B value DWI as well as a contoured whole gland segmentation of the prostate gland, up to 4 lesion segmentations in the form of bounding boxes, and approximated sextant segmentations. Corresponding fusion biopsy and nontargeted sextant (i.e. systematic) biopsy results in the form of gleason score converted to an ISUP/Gleason grade (with “0” corresponding to benign result) as well as PI-RADS scores, PSA density, presence of endorectal coil, prostate volume, patient age, an anonymized patient identifier, and patient race are available. 
 
-The CT volumes were acquired at UCSF between 2002-2018 and only renal masses less than or equal to 7cm (T1 stage) were included. Each exam has an unenhanced CT volume and up to three contrast enhanced CT phases (arterial/corticomedullary, portal venous/nephrogenic, delayed/excretory). For each exam, the contrast enhanced CT volumes are registered to the unenhanced volume. For a minority of the exams, registration was unsuccessful, but these exams are still included for further investigation.
 
 ## Citations
 
+<!--
+### Dataset
 
 ```
 Larson, P., Wang, Z. J., Sahin, S., Diaz, E., Rajagopal, A., Abtahi, M., Jones, S., Dai, Q., Kramer, S.
@@ -15,15 +16,34 @@ UCSF RMaC: UCSF Renal Mass CT Dataset.
 UCSF Center for Intelligent Imaging (Ci2) Datasets for Medical Imaging.
 https://imagingdatasets.ucsf.edu/dataset/3.  doi: 10.58078/C2WC74 (2025).
 ```
+--> 
+
+### Publications that used this dataset
 
 ```
-Sahin SI. Quantification and Deep Learning Applications: Metabolite-Specific Hyperpolarized 13C-Pyruvate MRI and Multiphase CT in Renal Cell Carcinomas.
-Order No. 31489175 ed. University of California, San Francisco; 2024.
-https://www.proquest.com/dissertations-theses/quantification-deep-learning-applications/docview/3102832760/se-2
+Velarde N, Westphalen AC, Nguyen HG, Neuhaus J, Shinohara K, Simko JP, Larson PE, Magudia K. 
+US lesion visibility predicts clinically significant upgrade of prostate cancer by systematic biopsy. 
+Abdominal Radiology. 2022 Mar;47(3):1133-41.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8863714/
+```
+
+```
+Rajagopal A, Redekop E, Kemisetti A, Kulkarni R, Raman S, Sarma K, Magudia K, Arnold CW, Larson PE. 
+Federated learning with research prototypes: application to multi-center MRI-based detection of prostate cancer with diverse histopathology. 
+Academic radiology. 2023 Apr 1;30(4):644-57.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC10869141/
+```
+
+```
+Rajagopal A, Westphalen AC, Velarde N, Simko JP, Nguyen H, Hope TA, Larson PE, Magudia K. 
+Mixed supervision of histopathology improves prostate cancer classification from MRI. 
+IEEE transactions on medical imaging. 2024 Mar 28;43(7):2610-22.
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11361281/
 ```
 
 ## Data Access (In Progress)
 
+<!-- 
 The dataset is hosted on AWS S3. It can be found at the following URIs:
 
 
@@ -116,13 +136,14 @@ Curation jupyter notebooks are collected in /curation and are numbered 01-07 to 
 A sample conda environment can be found in `environment.yml`
 
 `curation/utils.py` -- contains utility functions for the curation steps
+--> 
 
 ## Contributors
 
-Project initiation and leadership - Peder Larson, PhD, and Zhen Jane Wang, MD
+Project initiation and leadership - Kirti Magudia, MD, Peder Larson, PhD, and Antonio Westphalen, MD
 
-Dataset Extraction - Sage Kramer, MD
+Dataset Extraction - Kirti Magudia, MD
 
-Curation - Sage Kramer, MD, Sule Sahin, PhD, Abhejit Rajagopal, PhD, Mansour Abtahi, PhD, Samantha Jones, Ernesto Diaz
+Curation - Kirti Magudia, MD, Nathan Velarde, Jeffry Simko, MD PhD, Hao Ngyuen, MD PhD
 
-Data Management - Sule Sahin, PhD, Abhejit Rajagopal, PhD, Ernesto Diaz, Qing Dai
+Data Management - Kirti Magudia, PhD, Abhejit Rajagopal, PhD
