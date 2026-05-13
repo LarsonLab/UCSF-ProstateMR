@@ -23,21 +23,21 @@ https://imagingdatasets.ucsf.edu/dataset/3.  doi: 10.58078/C2WC74 (2025).
 ```
 Velarde N, Westphalen AC, Nguyen HG, Neuhaus J, Shinohara K, Simko JP, Larson PE, Magudia K. 
 US lesion visibility predicts clinically significant upgrade of prostate cancer by systematic biopsy. 
-Abdominal Radiology. 2022 Mar;47(3):1133-41.
+Abdominal Radiology. 2022 Mar;47(3):1133-41. doi: 10.1007/s00261-021-03389-x
 https://pmc.ncbi.nlm.nih.gov/articles/PMC8863714/
 ```
 
 ```
 Rajagopal A, Redekop E, Kemisetti A, Kulkarni R, Raman S, Sarma K, Magudia K, Arnold CW, Larson PE. 
 Federated learning with research prototypes: application to multi-center MRI-based detection of prostate cancer with diverse histopathology. 
-Academic radiology. 2023 Apr 1;30(4):644-57.
+Academic radiology. 2023 Apr 1;30(4):644-57. doi: 10.1016/j.acra.2023.02.012
 https://pmc.ncbi.nlm.nih.gov/articles/PMC10869141/
 ```
 
 ```
 Rajagopal A, Westphalen AC, Velarde N, Simko JP, Nguyen H, Hope TA, Larson PE, Magudia K. 
 Mixed supervision of histopathology improves prostate cancer classification from MRI. 
-IEEE transactions on medical imaging. 2024 Mar 28;43(7):2610-22.
+IEEE transactions on medical imaging. 2024 Mar 28;43(7):2610-22. doi: 10.1109/TMI.2024.3382909
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11361281/
 ```
 
