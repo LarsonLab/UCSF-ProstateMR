@@ -1,6 +1,6 @@
 # UCSF-ProstateMR: The University of California - San Francisco (UCSF) Prostate MRI (UCSF-ProstateMR) Dataset
 
-![Logo](logo.png)
+![Logo](logo_UCSF-ProstateMR.png)
 
 This dataset provides a large dataset of 973 prostate MRI exams performed between January 2016 to March 2019 of all patients that underwent subsequent MRI/ultrasound fusion biopsy within one year at UCSF. Each exam includes registered T2, ADC and high B value DWI as well as a contoured whole gland segmentation of the prostate gland, up to 4 lesion segmentations in the form of bounding boxes, and approximated sextant segmentations. Corresponding fusion biopsy and nontargeted sextant (i.e. systematic) biopsy results in the form of gleason score converted to an ISUP/Gleason grade (with “0” corresponding to benign result) as well as PI-RADS scores, PSA density, presence of endorectal coil, prostate volume, patient age, an anonymized patient identifier, and patient race are available. 
 
@@ -11,10 +11,10 @@ This dataset provides a large dataset of 973 prostate MRI exams performed betwee
 ### Dataset
 
 ```
-Larson, P., Wang, Z. J., Sahin, S., Diaz, E., Rajagopal, A., Abtahi, M., Jones, S., Dai, Q., Kramer, S.
-UCSF RMaC: UCSF Renal Mass CT Dataset.
+Larson PEZ, Rajagopal A, Abtahi M, Velarde N, Simko JP, Nguyen HG, Westphalen AC, Magudia K.
+UCSF ProstateMR: UCSF Prostate MRI Dataset.
 UCSF Center for Intelligent Imaging (Ci2) Datasets for Medical Imaging.
-https://imagingdatasets.ucsf.edu/dataset/3.  doi: 10.58078/C2WC74 (2025).
+https://imagingdatasets.ucsf.edu/dataset/.  doi:  (2026).
 ```
 --> 
 
@@ -120,23 +120,12 @@ HDF5 file datasets: ['arterial', 'delay', 'mask', 'noncon', 'portven']
 HDF5 file attributes: ['Manufacturer', 'PID', 'Patient Age', 'Patient Sex', 'arterial_pixdim', 'delay_pixdim', 'mask_pixdim', 'noncon_pixdim', 'pathology', 'pathology_grade', 'portven_pixdim', 'tumor_type']
 Shape of noncon volume: (512, 512, 49)
 ```
+--> 
 
 ## Tutorials
 
-- [Label Exploration](tutorials/labelexploration.ipynb)
-  - Explore the pathology labels across all the datasets and plot distributions
+[Get to Know the Dataset Notebook](tutorials/get-to-know-a-dataset_UCSF-ProstateMR.ipynb)
 
-- [Tumor Mask Overlays](tutorials/maskoverlays.ipynb)
-  - Visualize slices of the CT volumes and overlay tumor mask on
-
-## Data Curation
-
-Curation jupyter notebooks are collected in /curation and are numbered 01-07 to indicate each step of curation process.
-
-A sample conda environment can be found in `environment.yml`
-
-`curation/utils.py` -- contains utility functions for the curation steps
---> 
 
 ## Contributors
 
@@ -146,4 +135,4 @@ Dataset Extraction - Kirti Magudia, MD
 
 Curation - Kirti Magudia, MD, Nathan Velarde, Jeffry Simko, MD PhD, Hao Ngyuen, MD PhD
 
-Data Management - Kirti Magudia, PhD, Abhejit Rajagopal, PhD
+Data Management - Kirti Magudia, PhD, Abhejit Rajagopal, PhD, Mansour Abtahi, PhD
