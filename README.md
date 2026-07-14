@@ -7,16 +7,14 @@ This dataset provides a large dataset of 973 prostate MRI exams performed betwee
 
 ## Citations
 
-<!--
 ### Dataset
 
 ```
 Larson PEZ, Rajagopal A, Abtahi M, Velarde N, Simko JP, Nguyen HG, Westphalen AC, Magudia K.
 UCSF ProstateMR: UCSF Prostate MRI Dataset.
 UCSF Center for Intelligent Imaging (Ci2) Datasets for Medical Imaging.
-https://imagingdatasets.ucsf.edu/dataset/.  doi:  (2026).
+https://imagingdatasets.ucsf.edu/dataset/5.  doi: 10.58078/C2MW2X (2026).
 ```
---> 
 
 ### Publications that used this dataset
 
